@@ -1,7 +1,7 @@
 # Linear-Regression-Data-Analysis-Basquiat
 ### An analysis of Basquiat’s top selling works & a multiple linear regression to predict prices.
 # Objective 
-This project analyzes Basquait’s top art pieces with the highest hammer prices (sale prices in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
+This project analyzes Jean Michel Basquait’s top art pieces with the highest hammer prices (sale prices in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
 
 A multiple linear regression was implemented to estimate and predict hammer prices for Basquiat’s works. This can be used by art collectors to estimate their maximum bids for auctions, attain values for price negotiations, predict high-value pieces for maximal return on investment, and predict the value of their current Basquiat collection. 
 # Dataset 
@@ -205,7 +205,14 @@ plt.ylabel('Predicted Y')
 *Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
 # Key Takeaways
+- 
+
 To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
-                                                    
-                                                
+
+<img width="661" alt="Screen Shot 2022-08-16 at 4 37 33 PM" src="https://user-images.githubusercontent.com/104586192/184980504-d5d5d7fc-2491-419c-9996-c1e2478faac2.png">
+
+<img width="641" alt="Screen Shot 2022-08-16 at 4 24 01 PM" src="https://user-images.githubusercontent.com/104586192/184979645-103af4c8-4759-4a5e-ae5c-8466413bc9f4.png">
+
+<img width="657" alt="Screen Shot 2022-08-16 at 4 33 25 PM" src="https://user-images.githubusercontent.com/104586192/184979769-d050ca99-095c-484c-a5b3-a4b9950861b1.png">
+             
 
