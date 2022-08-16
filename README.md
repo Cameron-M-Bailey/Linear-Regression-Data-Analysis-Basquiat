@@ -205,7 +205,7 @@ plt.ylabel('Predicted Y')
 *Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
 # Key Takeaways
-To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348" target="_blank">here</a>.
+To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
                                                     
                                                 
 
