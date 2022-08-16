@@ -144,6 +144,7 @@ sns.displot(x=hammer_price,data=df,kde=True)
 #Transform data into normal distrubtion.
 price_log = np.log(df['Hammer Price (USD in millions)'])
 price_log.skew() #-0.32
+
 #Confirm distribution is normally distributed. 
 sns.displot(x=price_log,data=df,kde=True)
 ```
@@ -200,6 +201,8 @@ plt.ylabel('Predicted Y')
 <b>Mean Absolute Error:</b> 0.473 <br>
 <b>Mean Squared Error:</b> 0.394<br>
 <b>Root Mean Square Error:</b> 0.638<br>
+
+*Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
                                                     
                                                 
