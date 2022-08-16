@@ -24,3 +24,15 @@ The dataset contains the hammer prices in millions (USD) and other attributes of
 <b>Unique Colors:</b>  number of unique colors in work (14392--592217)<br>
 <b>Contrast Score:</b>  average contrast in work (2.50--46.46)<br>
 <b>Brightness Score:</b>  average brightness in work (45.30--243.90)<br>
+
+Low Unique Colors             |  High Unique Colors
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/104586192/184936789-dfe3d36e-2eec-450d-b6c8-28ae878517aa.jpeg" width="200" height="200">|<img src="https://user-images.githubusercontent.com/104586192/184937292-2186dec2-9616-4e9e-9ddf-05b70b630408.jpeg" width="200" height="200">
+
+
+Low Contrast Score           |  High Contrast Score
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/104586192/184938096-90f87b5b-dba1-427f-af2a-aeed8b199c0e.jpeg" width="200" height="200">|<img src="https://user-images.githubusercontent.com/104586192/184938361-dd57f894-c761-4fd8-861e-2143aa1e6e45.jpeg" width="200" height="200">
+
+Low Brightness Score           |  High Brightness Score
+:-------------------------:|:-------------------------:
