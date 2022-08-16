@@ -72,21 +72,35 @@ A naïve model was built to serve as a benchmark for trained model.
 
 ## Exploratory Data Analysis
 
+Hammer Price is highly correlated with Area and Number of Unique Colors as well as slightly correlated with Contrast Score. 
+
 <img width="750" alt="Screen Shot 2022-08-16 at 1 56 18 PM" src="https://user-images.githubusercontent.com/104586192/184946886-e69f9ac7-88d6-4344-b29b-4c7ab885bed2.png">
-
-Hammer Price is highly correlated with Area and Number of Unique Colors. For our other color features, Contrast Score is slightly positvely correlated, while Brightness Score is negatively correlated with Hammer Price.
-
-<img width="402" alt="Screen Shot 2022-08-16 at 2 02 13 PM" src="https://user-images.githubusercontent.com/104586192/184947991-0923cbe9-9a59-4c39-9bcb-bbd6231d8cf5.png">
 
 On average, paintings are worth 5x drawings. 
 
-<img width="757" alt="Screen Shot 2022-08-16 at 2 04 39 PM" src="https://user-images.githubusercontent.com/104586192/184948419-5e9d61d9-7d0d-4f07-a2b1-822c5f258cab.png">
+<img width="402" alt="Screen Shot 2022-08-16 at 2 02 13 PM" src="https://user-images.githubusercontent.com/104586192/184947991-0923cbe9-9a59-4c39-9bcb-bbd6231d8cf5.png">
 
 On average, Basquiat's most popular medium, Acrylic, goes for the highest Hammer Price. This is followed by Oilstick, Colored Pencils, and Pastels, respectively. 
 
-<img width="760" alt="Screen Shot 2022-08-16 at 2 18 01 PM" src="https://user-images.githubusercontent.com/104586192/184950710-cb8cb208-cab4-4b1c-b02f-b17ce9ba9fc2.png">
+<img width="757" alt="Screen Shot 2022-08-16 at 2 04 39 PM" src="https://user-images.githubusercontent.com/104586192/184948419-5e9d61d9-7d0d-4f07-a2b1-822c5f258cab.png">
 
 His most popular, highest selling works were created early career in his career from 1881-3, which make up about 83% of total sales. 1882 is his most popular year making up 52% of total sales. 
+
+<img width="760" alt="Screen Shot 2022-08-16 at 2 18 01 PM" src="https://user-images.githubusercontent.com/104586192/184950710-cb8cb208-cab4-4b1c-b02f-b17ce9ba9fc2.png">
+
+### Color Features
+A high number of unique colors has the best correlation with a high Hammer Price.
+
+<img width="415" alt="Screen Shot 2022-08-16 at 3 12 54 PM" src="https://user-images.githubusercontent.com/104586192/184962895-120fe941-5dc4-4420-b7d3-0309b38b9fe0.png">
+
+Contrast Score has a slight positve correlation with Hammer Price.
+
+<img width="411" alt="Screen Shot 2022-08-16 at 3 13 34 PM" src="https://user-images.githubusercontent.com/104586192/184963006-73e06533-42ff-4752-98e5-892956befc9d.png">
+
+Brightness Score actually negatively impacts Hammer Price.
+
+<img width="403" alt="Screen Shot 2022-08-16 at 3 13 53 PM" src="https://user-images.githubusercontent.com/104586192/184963051-8cf0c40f-3f69-43b6-9439-a781d3d4c7c5.png">
+
 
 ## Preprocessing
 ### Remove outliers from features correlated with Hammer Price 
