@@ -32,7 +32,13 @@ Low Unique Colors             |  High Unique Colors
 
 Low Contrast Score           |  High Contrast Score
 :-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/104586192/184938096-90f87b5b-dba1-427f-af2a-aeed8b199c0e.jpeg" width="200" height="200">|<img src="https://user-images.githubusercontent.com/104586192/184938361-dd57f894-c761-4fd8-861e-2143aa1e6e45.jpeg" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/104586192/184940640-cd4467f4-9d91-4a3c-bebd-a4bc1cb03983.jpeg" width="200" height="200">|<img src="https://user-images.githubusercontent.com/104586192/184938361-dd57f894-c761-4fd8-861e-2143aa1e6e45.jpeg" width="200" height="200">
 
 Low Brightness Score           |  High Brightness Score
 :-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/104586192/184939423-e7c1e973-e0da-4e4a-a47c-1d534a3b528f.jpeg" width="200" height="200">|<img src="https://user-images.githubusercontent.com/104586192/184940269-25ba4b83-81cf-4374-b186-11a50913084f.jpeg" width="200" height="200">
+
+<b>Credit:</b> Photos from Artprice Images®
+
+
+
