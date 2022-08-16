@@ -58,7 +58,7 @@ Excel=
 =RIGHT([cell],4)
 
 #Split paintings & drawings into small, medium, and large.
-=IF(H2<=1877,"Small",IF(AND(H2>=1878,H2<=12312),"Medium",IF(H2>=12313,"Large","Null")))
+=IF([cell]<=1877,"Small",IF(AND([cell]>=1878,[cell]<=12312),"Medium",IF([cell]>=12313,"Large","Null")))
 ```
 ## Baseline Model
 
@@ -71,6 +71,23 @@ A naïve model was built to serve as a benchmark for trained model.
 <b>Root Mean Square Error:</b> 14.751<br>
 
 ## Exploratory Data Analysis
+
+<img width="750" alt="Screen Shot 2022-08-16 at 1 56 18 PM" src="https://user-images.githubusercontent.com/104586192/184946886-e69f9ac7-88d6-4344-b29b-4c7ab885bed2.png">
+
+Hammer Price is highly correlated with Area and Number of Unique Colors. For our other color features, Contrast Score is slightly positvely correlated, while Brightness Score is negatively correlated with Hammer Price.
+
+<img width="402" alt="Screen Shot 2022-08-16 at 2 02 13 PM" src="https://user-images.githubusercontent.com/104586192/184947991-0923cbe9-9a59-4c39-9bcb-bbd6231d8cf5.png">
+
+On average, paintings are worth 5x drawings. 
+
+<img width="757" alt="Screen Shot 2022-08-16 at 2 04 39 PM" src="https://user-images.githubusercontent.com/104586192/184948419-5e9d61d9-7d0d-4f07-a2b1-822c5f258cab.png">
+
+On average, Basquiat's most popular medium, Acrylic, goes for the highest Hammer Price. This is followed by Oilstick, Colored Pencils, and Pastels, respectively. 
+
+<img width="763" alt="Screen Shot 2022-08-16 at 2 11 34 PM" src="https://user-images.githubusercontent.com/104586192/184949583-283f1ffc-3bad-4f68-8940-09f887d50a22.png">
+
+His most popular, highest selling works were created early career in his career from 1881-3, which make up about 83% of total sales. 1882 is his most popular year making up 52% of total sales. 
+
 
 
 
