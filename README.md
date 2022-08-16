@@ -84,7 +84,7 @@ On average, Basquiat's most popular medium, Acrylic, goes for the highest Hammer
 
 <img width="757" alt="Screen Shot 2022-08-16 at 2 04 39 PM" src="https://user-images.githubusercontent.com/104586192/184948419-5e9d61d9-7d0d-4f07-a2b1-822c5f258cab.png">
 
-His most popular, highest selling works were created early career in his career from 1881-3, which make up about 83% of total sales. 1882 is his most popular year making up 52% of total sales. 
+His most popular, highest selling works were created early career in his career from 1981-3, which make up about 83% of total sales. 1982 is his most popular year making up 52% of total sales. 
 
 <img width="760" alt="Screen Shot 2022-08-16 at 2 18 01 PM" src="https://user-images.githubusercontent.com/104586192/184950710-cb8cb208-cab4-4b1c-b02f-b17ce9ba9fc2.png">
 
