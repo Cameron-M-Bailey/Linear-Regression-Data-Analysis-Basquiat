@@ -84,10 +84,75 @@ On average, paintings are worth 5x drawings.
 
 On average, Basquiat's most popular medium, Acrylic, goes for the highest Hammer Price. This is followed by Oilstick, Colored Pencils, and Pastels, respectively. 
 
-<img width="763" alt="Screen Shot 2022-08-16 at 2 11 34 PM" src="https://user-images.githubusercontent.com/104586192/184949583-283f1ffc-3bad-4f68-8940-09f887d50a22.png">
+<img width="760" alt="Screen Shot 2022-08-16 at 2 18 01 PM" src="https://user-images.githubusercontent.com/104586192/184950710-cb8cb208-cab4-4b1c-b02f-b17ce9ba9fc2.png">
 
 His most popular, highest selling works were created early career in his career from 1881-3, which make up about 83% of total sales. 1882 is his most popular year making up 52% of total sales. 
 
+## Preprocessing
+### Remove outliers from features correlated with Hammer Price 
+```
+#Remove outliers from Area which do not follow general trend of data.
+df.drop(df[df['Area (in)'] > 20000].index,axis=0,inplace=True)
+df.drop(df[df['Hammer Price (USD in millions)']>80].index,axis=0,inplace=True)
+```
+<img width="432" alt="Screen Shot 2022-08-16 at 2 34 45 PM" src="https://user-images.githubusercontent.com/104586192/184953542-4954bc07-53a3-4a37-9b3f-fac7c727bbc3.png">
 
+<img width="427" alt="Screen Shot 2022-08-16 at 2 33 38 PM" src="https://user-images.githubusercontent.com/104586192/184953295-696d4ac2-4465-455e-8d79-1bdbea5e3783.png">
+
+```
+#Remove outliers from Unique Colors which do not follow general trend of data.
+df.drop(df[df['Hammer Price (USD in millions)']>70].index,axis=0,inplace=True)
+```
+
+<img width="418" alt="Screen Shot 2022-08-16 at 2 39 13 PM" src="https://user-images.githubusercontent.com/104586192/184954269-7dec2e57-13e0-4457-ba17-3cdc851a9dd4.png">
+
+<img width="411" alt="Screen Shot 2022-08-16 at 2 39 23 PM" src="https://user-images.githubusercontent.com/104586192/184954300-c3265de0-90f7-4e34-bf28-0618ce430451.png">
+
+```
+#Remove outliers from Contrast Score which do not follow general trend of data.
+df.drop(df[(df['Contrast Score']<20) & (df['Hammer Price (USD in millions)']>30)].index,axis=0,inplace=True)
+```
+<img width="404" alt="Screen Shot 2022-08-16 at 2 43 53 PM" src="https://user-images.githubusercontent.com/104586192/184955097-f361406f-609a-4a9a-8696-20963ade3360.png">
+
+<img width="404" alt="Screen Shot 2022-08-16 at 2 44 20 PM" src="https://user-images.githubusercontent.com/104586192/184955186-959aa2c1-3d81-4f32-9b1d-54311c8f78f1.png">
+
+### Remedy right-skewed data
+
+```
+#View current distrubtion of data.
+hammer_price = (df['Hammer Price (USD in millions)'])
+hammer_price.skew() #2.01
+sns.displot(x=hammer_price,data=df,kde=True)
+```
+<img width="370" alt="Screen Shot 2022-08-16 at 2 52 57 PM" src="https://user-images.githubusercontent.com/104586192/184957621-b63860db-7b35-41e0-be44-ae4145b46b3b.png">
+
+```
+#Transform data into normal distrubtion.
+price_log = np.log(df['Hammer Price (USD in millions)'])
+price_log.skew() #-0.32
+#Confirm distribution is normally distributed. 
+sns.displot(x=price_log,data=df,kde=True)
+```
+<img width="358" alt="Screen Shot 2022-08-16 at 2 56 36 PM" src="https://user-images.githubusercontent.com/104586192/184959088-1a1a52a0-d227-4fd3-b263-1a17d2443ce8.png">
+
+### Feature Engineering for Categorical Data 
+
+```
+#Drop unessacary columns.
+df.drop(['Title','Length (in)','Width (in)','Seller Country','Month'],axis=1,inplace=True)
+
+#Converting our categorial variables 
+art_type = pd.get_dummies(df['Type'],drop_first=True)
+primary_medium = pd.get_dummies(df['Primary Medium'],drop_first=True)
+size = pd.get_dummies(df['Size'],drop_first=True)
+seller = pd.get_dummies(df['Seller'],drop_first=True)
+seller_city = pd.get_dummies(df['Seller City'],drop_first=True)
+
+#Drop columns which have already been converted into dummies. 
+df.drop(['Type','Primary Medium','Size','Seller','Seller City'],axis=1,inplace=True)
+
+#Add dummies to the original DataFrame
+df = pd.concat([df,art_type,primary_medium,size,seller,seller_city],axis=1)
+```
 
 
