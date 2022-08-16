@@ -155,4 +155,38 @@ df.drop(['Type','Primary Medium','Size','Seller','Seller City'],axis=1,inplace=T
 df = pd.concat([df,art_type,primary_medium,size,seller,seller_city],axis=1)
 ```
 
+# Build Linear Regression Model
+
+```
+#Split data into train and test data. 
+X_train, X_test, y_train, y_test = train_test_split(df.drop('Hammer Price (USD in millions)',axis=1), price_log, test_size=0.30)
+
+#Standardize and fit our training data.
+scaler = StandardScaler()
+scaler.fit(X_train)
+
+#Transform our training and test data. 
+X_train = scaler.transform(X_train)
+X_test = scaler.transform(X_test)
+
+#Train our model
+lm = LinearRegression()
+lm.fit(X_train,y_train)
+
+#Test our model
+predictions = lm.predict(X_test)
+
+#Results 
+plt.scatter(y_test,predictions)
+plt.xlabel('Y Test')
+plt.ylabel('Predicted Y')
+```
+<img width="400" alt="Screen Shot 2022-08-16 at 3 08 52 PM" src="https://user-images.githubusercontent.com/104586192/184962167-0ffdec62-82e6-4dd7-ad51-68afc1748b13.png">
+
+<b>Mean Absolute Error:</b> 0.473 <br>
+<b>Mean Squared Error:</b> 0.394<br>
+<b>Root Mean Square Error:</b> 0.638<br>
+
+                                                    
+                                                
 
