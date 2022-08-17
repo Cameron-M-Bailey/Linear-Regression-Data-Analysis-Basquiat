@@ -198,11 +198,11 @@ plt.ylabel('Predicted Y')
 ```
 <img width="400" alt="Screen Shot 2022-08-16 at 3 08 52 PM" src="https://user-images.githubusercontent.com/104586192/184962167-0ffdec62-82e6-4dd7-ad51-68afc1748b13.png">
 
-<b>Mean Squared Error:</b> 0.168<br>
-<b>Mean Absolute Error:</b> 0.312 <br>
-<b>Root Mean Square Error:</b> 0.410<br>
+<b>Mean Squared Error:</b> 0.394<br>
+<b>Mean Absolute Error:</b> 0.473 <br>
+<b>Root Mean Square Error:</b> 0.638<br>
 
-*Compared to our baseline model this is a vast improvement with a MSE of about 0.2.*
+*Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
 # Key Takeaways
 - 
