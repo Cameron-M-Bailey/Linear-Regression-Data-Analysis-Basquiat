@@ -208,8 +208,8 @@ plt.ylabel('Predicted Y')
 - Overall, acrylic paintings hold the most value for Basquiat paintings, the only exception is an Untitled 1981 Oilstick piece which sold for $23.5 million.
 - Paintings from Basquiat's early career (1981-3) are considered the most valuable and coveted with 1982 being considered his best works.
 - Although drawings are significantly less valuable than his paintings, oilstick and ink drawings will still net decent hammer prices with the highest priced drawing being worth $13.1 million. 
-- Basquiat artwork which have a variety of unique colors and high contrast (high difference between its lightest and darkess shades) will be worth slightly more than those without these features; brighter artworks seem to be worth slightly less. 
-- Basquiat sales fluctuate every couple of years, but 2021 saw a massive spike in sales due to the height of the #BlackLivesMatter movement and Basquait becoming increasingly popular for popular brands to collaborate with.
+- Basquiat's artwork with a variety of unique colors and high contrast (high difference between its lightest and darkest shades) will be worth slightly more than those without these features; brighter artworks seem to be worth slightly less. 
+- Basquiat sales fluctuate every couple of years, but 2021 saw a massive spike in sales due to the height of the #BlackLivesMatter movement and becoming a popular collaborator with large brands.
 
 To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
 
