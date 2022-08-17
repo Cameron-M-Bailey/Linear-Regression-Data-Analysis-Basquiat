@@ -3,7 +3,7 @@
 # Objective 
 This project analyzes Jean Michel Basquait’s top art pieces with the highest hammer prices (sale prices in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
 
-A multiple linear regression was implemented to estimate and predict hammer prices for Basquiat’s works. This can be used by art collectors to estimate their maximum bids for auctions, attain values for price negotiations, predict high-value pieces for maximal return on investment, and predict the value of their current Basquiat collection. 
+A multiple linear regression was implemented to estimate and predict hammer prices for Basquiat’s works. This can be used by art collectors and galleries to estimate their maximum bids for auctions, attain values for price negotiations, predict high-value pieces for maximal return on investment, and predict the value of their current Basquiat collection. 
 # Dataset 
 The dataset contains the hammer prices in millions (USD) and other attributes of Basquiat’s top-selling paintings & drawings. Data was manually compiled from Artprice.com. Unique Colors, Contrast Score, and Brightness Score were determined with functions utilizing computer vision from Stack Overflow. Functions used and credit given to the appropriate contributors can be found in the Basquiat Artwork Evaluator Repository. Features include: 
 
@@ -205,7 +205,11 @@ plt.ylabel('Predicted Y')
 *Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
 # Key Takeaways
-- 
+- Overall, acrylic paintings hold the most value for Basquiat paintings, the only exception is an Untitled 1981 Oilstick piece which sold for $23.5 million.
+- Paintings from Basquiat's early career (1981-3) are considered the most valuable and coveted with 1982 being considered his best works.
+- Although drawings are significantly less valuable than his paintings, oilstick and ink drawings will still net decent hammer prices with the highest priced drawing being worth $13.1 million. 
+- Basquiat artwork which have a variety of unique colors and high contrast (high difference between its lightest and darkess shades) will be worth slightly more than those without these features; brighter artworks seem to be worth slightly less. 
+- Basquiat sales fluctuate every couple of years, but 2021 saw a massive spike in sales due to the height of the #BlackLivesMatter movement and Basquait becoming increasingly popular for popular brands to collaborate with.
 
 To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
 
