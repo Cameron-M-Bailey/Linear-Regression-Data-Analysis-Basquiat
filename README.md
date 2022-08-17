@@ -5,7 +5,7 @@ This project analyzes Jean Michel Basquait’s top art pieces with the highest h
 
 A multiple linear regression was implemented to estimate and predict hammer prices for Basquiat’s works. This can be used by art collectors and galleries to estimate their maximum bids for auctions, attain values for price negotiations, predict high-value pieces for maximal return on investment, and predict the value of their current Basquiat collection. 
 # Dataset 
-The dataset contains the hammer prices in millions (USD) and other attributes of Basquiat’s top-selling paintings & drawings. Data was manually compiled from Artprice.com. Unique Colors, Contrast Score, and Brightness Score were determined with functions utilizing computer vision from Stack Overflow. Functions used and credit given to the appropriate contributors can be found in the Basquiat Artwork Evaluator Repository. Features include: 
+The dataset contains the hammer prices in millions (USD) and other attributes of Basquiat’s top-selling paintings & drawings. Data was manually compiled from Artprice.com. Unique Colors, Contrast Score, and Brightness Score were determined with functions utilizing computer vision from Stack Overflow. Functions used and credit given to the appropriate contributors can be found in the Basquiat Artwork Evaluator repository. Features include: 
 
 <b>Title:</b> title of work<br>
 <b>Type:</b>  type of art form<br>
