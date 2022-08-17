@@ -66,8 +66,8 @@ A naïve model was built to serve as a benchmark for trained model.
 
 <img width="425" alt="Screen Shot 2022-08-16 at 1 49 13 PM" src="https://user-images.githubusercontent.com/104586192/184945590-bd114016-7600-44b7-aad8-b51917c535be.png">
 
-<b>Mean Absolute Error:</b> 9.007 <br>
 <b>Mean Squared Error:</b> 217.589<br>
+<b>Mean Absolute Error:</b> 9.007 <br>
 <b>Root Mean Square Error:</b> 14.751<br>
 
 ## Exploratory Data Analysis
@@ -133,7 +133,7 @@ df.drop(df[(df['Contrast Score']<20) & (df['Hammer Price (USD in millions)']>30)
 ### Remedy right-skewed data
 
 ```python3
-#View current distrubtion of data.
+#View current distrubtion of our y-value (Hammer Price).
 hammer_price = (df['Hammer Price (USD in millions)'])
 hammer_price.skew() #2.01
 sns.displot(x=hammer_price,data=df,kde=True)
@@ -141,7 +141,7 @@ sns.displot(x=hammer_price,data=df,kde=True)
 <img width="370" alt="Screen Shot 2022-08-16 at 2 52 57 PM" src="https://user-images.githubusercontent.com/104586192/184957621-b63860db-7b35-41e0-be44-ae4145b46b3b.png">
 
 ```python3
-#Transform data into normal distrubtion.
+#Transform y-value (Hammer Price) into normal distrubtion.
 price_log = np.log(df['Hammer Price (USD in millions)'])
 price_log.skew() #-0.32
 
@@ -196,13 +196,13 @@ plt.scatter(y_test,predictions)
 plt.xlabel('Y Test')
 plt.ylabel('Predicted Y')
 ```
-<img width="400" alt="Screen Shot 2022-08-16 at 3 08 52 PM" src="https://user-images.githubusercontent.com/104586192/184962167-0ffdec62-82e6-4dd7-ad51-68afc1748b13.png">
+<img width="417" alt="Screen Shot 2022-08-16 at 9 39 03 PM" src="https://user-images.githubusercontent.com/104586192/185015670-4c5e4f6f-a9f3-48e9-8431-672a894140b8.png">
 
-<b>Mean Absolute Error:</b> 0.473 <br>
-<b>Mean Squared Error:</b> 0.394<br>
-<b>Root Mean Square Error:</b> 0.638<br>
+<b>Mean Squared Error:</b> 0.168<br>
+<b>Mean Absolute Error:</b> 0.312 <br>
+<b>Root Mean Square Error:</b> 0.410<br>
 
-*Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
+*Compared to our baseline model this is a vast improvement with a MSE of about 0.2.*
 
 # Key Takeaways
 - 
