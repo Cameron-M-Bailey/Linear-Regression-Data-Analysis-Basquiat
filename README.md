@@ -196,7 +196,7 @@ plt.scatter(y_test,predictions)
 plt.xlabel('Y Test')
 plt.ylabel('Predicted Y')
 ```
-<img width="417" alt="Screen Shot 2022-08-16 at 9 39 03 PM" src="https://user-images.githubusercontent.com/104586192/185015670-4c5e4f6f-a9f3-48e9-8431-672a894140b8.png">
+<img width="400" alt="Screen Shot 2022-08-16 at 3 08 52 PM" src="https://user-images.githubusercontent.com/104586192/184962167-0ffdec62-82e6-4dd7-ad51-68afc1748b13.png">
 
 <b>Mean Squared Error:</b> 0.168<br>
 <b>Mean Absolute Error:</b> 0.312 <br>
