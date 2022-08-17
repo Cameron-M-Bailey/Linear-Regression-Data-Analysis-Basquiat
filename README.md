@@ -104,7 +104,7 @@ Brightness Score actually negatively impacts Hammer Price.
 
 ## Preprocessing
 ### Remove outliers from features correlated with Hammer Price 
-```
+```python3
 #Remove outliers from Area which do not follow general trend of data.
 df.drop(df[df['Area (in)'] > 20000].index,axis=0,inplace=True)
 df.drop(df[df['Hammer Price (USD in millions)']>80].index,axis=0,inplace=True)
@@ -113,7 +113,7 @@ df.drop(df[df['Hammer Price (USD in millions)']>80].index,axis=0,inplace=True)
 
 <img width="427" alt="Screen Shot 2022-08-16 at 2 33 38 PM" src="https://user-images.githubusercontent.com/104586192/184953295-696d4ac2-4465-455e-8d79-1bdbea5e3783.png">
 
-```
+```python3
 #Remove outliers from Unique Colors which do not follow general trend of data.
 df.drop(df[df['Hammer Price (USD in millions)']>70].index,axis=0,inplace=True)
 ```
@@ -122,7 +122,7 @@ df.drop(df[df['Hammer Price (USD in millions)']>70].index,axis=0,inplace=True)
 
 <img width="411" alt="Screen Shot 2022-08-16 at 2 39 23 PM" src="https://user-images.githubusercontent.com/104586192/184954300-c3265de0-90f7-4e34-bf28-0618ce430451.png">
 
-```
+```python3
 #Remove outliers from Contrast Score which do not follow general trend of data.
 df.drop(df[(df['Contrast Score']<20) & (df['Hammer Price (USD in millions)']>30)].index,axis=0,inplace=True)
 ```
@@ -132,7 +132,7 @@ df.drop(df[(df['Contrast Score']<20) & (df['Hammer Price (USD in millions)']>30)
 
 ### Remedy right-skewed data
 
-```
+```python3
 #View current distrubtion of data.
 hammer_price = (df['Hammer Price (USD in millions)'])
 hammer_price.skew() #2.01
@@ -140,7 +140,7 @@ sns.displot(x=hammer_price,data=df,kde=True)
 ```
 <img width="370" alt="Screen Shot 2022-08-16 at 2 52 57 PM" src="https://user-images.githubusercontent.com/104586192/184957621-b63860db-7b35-41e0-be44-ae4145b46b3b.png">
 
-```
+```python3
 #Transform data into normal distrubtion.
 price_log = np.log(df['Hammer Price (USD in millions)'])
 price_log.skew() #-0.32
@@ -152,7 +152,7 @@ sns.displot(x=price_log,data=df,kde=True)
 
 ### Feature Engineering for Categorical Data 
 
-```
+```python3
 #Drop unessacary columns.
 df.drop(['Title','Length (in)','Width (in)','Seller Country','Month'],axis=1,inplace=True)
 
@@ -172,7 +172,7 @@ df = pd.concat([df,art_type,primary_medium,size,seller,seller_city],axis=1)
 
 # Build Linear Regression Model
 
-```
+```python3
 #Split data into train and test data. 
 X_train, X_test, y_train, y_test = train_test_split(df.drop('Hammer Price (USD in millions)',axis=1), price_log, test_size=0.30)
 
