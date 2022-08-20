@@ -1,11 +1,11 @@
 # Linear-Regression-Data-Analysis-Basquiat
 ### An analysis of Basquiat’s top selling works & a multiple linear regression to predict prices.
 # Objective 
-This project analyzes Jean Michel Basquait’s top art pieces with the highest hammer prices (sale prices in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
+This project analyzes Jean Michel Basquait’s top art pieces with the highest hammer prices (sales price in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
 
 A multiple linear regression was implemented to estimate and predict hammer prices for Basquiat’s works. This can be used by art collectors and galleries to estimate their maximum bids for auctions, attain values for price negotiations, predict high-value pieces for maximal return on investment, and predict the value of their current Basquiat collection. 
 # Dataset 
-The dataset contains the hammer prices in millions (USD) and other attributes of Basquiat’s top-selling paintings & drawings. Data was manually compiled from Artprice.com. Unique Colors, Contrast Score, and Brightness Score were determined with functions utilizing computer vision from Stack Overflow. Functions used and credit given to the appropriate contributors can be found in the Basquiat Artwork Evaluator repository. Features include: 
+The dataset contains the hammer prices in millions (USD) and other attributes of Basquiat’s top-selling paintings & drawings. Data was manually compiled from Artprice.com. Unique Colors, Contrast Score, and Brightness Score were determined with functions utilizing computer vision from Stack Overflow. Functions used and credit given to the appropriate contributors within the Basquiat Artwork Evaluator repository. Features include: 
 
 <b>Title:</b> title of work<br>
 <b>Type:</b>  type of art form<br>
@@ -13,7 +13,7 @@ The dataset contains the hammer prices in millions (USD) and other attributes of
 <b>Year Created:</b>  year work was created <br> 
 <b>Length:</b>  length in inches (14--145)<br>
 <b>Width:</b>  width in inches (11--211)<br>
-<b>Area:</b>  area of work inches (154--21025)<br>
+<b>Area:</b>  area of work in inches (154--21025)<br>
 <b>Size:</b>  size of work (small, medium, large)<br>
 <b>Hammer Price:</b>  selling price of work in millions (USD)<br>
 <b>Seller:</b>  auction house who sold work<br>
@@ -46,9 +46,9 @@ Low Brightness Score           |  High Brightness Score
 ```
 Excel= 
 
-#Duplicate Slide to ensure no data is lost during cleaning. 
+#Duplicate slide to ensure no data is lost during cleaning. 
 
-#Convert 'Mixed Media' types to 'Painting' due to limited number and primary medium being acrylic paint.
+#Convert 'Mixed Media' types to 'Painting' due to limited count and primary medium being acrylic paint.
 =SUBSTITUTE([cell], "Mixed Media","Painting") 
 
 #Ensure area has no missing or irregular values 
@@ -58,7 +58,7 @@ Excel=
 =RIGHT([cell],4)
 
 #Split paintings & drawings into small, medium, and large.
-=IF([cell]<=1877,"Small",IF(AND([cell]>=1878,[cell]<=12312),"Medium",IF([cell]>=12313,"Large","Null")))
+=IF([area]<=1877,"Small",IF(AND([area]>=1878,[area]<=12312),"Medium",IF([area]>=12313,"Large","Null")))
 ```
 ## Baseline Model
 
@@ -84,7 +84,7 @@ On average, Basquiat's most popular medium, Acrylic, goes for the highest Hammer
 
 <img width="757" alt="Screen Shot 2022-08-16 at 2 04 39 PM" src="https://user-images.githubusercontent.com/104586192/184948419-5e9d61d9-7d0d-4f07-a2b1-822c5f258cab.png">
 
-His most popular, highest selling works were created early career in his career from 1981-3, which make up about 83% of total sales. 1982 is his most popular year making up 52% of total sales. 
+His highest selling works were created early career in his career from 1981-3, which make up about 83% of total sales. 1982 is his most popular year making up 52% of total sales. 
 
 <img width="760" alt="Screen Shot 2022-08-16 at 2 18 01 PM" src="https://user-images.githubusercontent.com/104586192/184950710-cb8cb208-cab4-4b1c-b02f-b17ce9ba9fc2.png">
 
@@ -205,7 +205,7 @@ plt.ylabel('Predicted Y')
 *Compared to our baseline model this is a vast improvement with a MSE of about 0.4.*
 
 # Key Takeaways
-- Overall, acrylic paintings hold the most value for Basquiat paintings, the only exception is an Untitled 1981 Oilstick piece which sold for $23.5 million.
+- Overall, acrylic paintings hold the most value for Basquiat's artwork, the only exception is an Untitled 1981 Oilstick piece which sold for $23.5 million.
 - Paintings from Basquiat's early career (1981-3) are considered the most valuable and coveted with 1982 being considered his best works.
 - Although drawings are significantly less valuable than his paintings, oilstick and ink drawings will still net decent hammer prices with the highest priced drawing being worth $13.1 million. 
 - Basquiat's artwork with a variety of unique colors and high contrast (high difference between its lightest and darkest shades) will be worth slightly more than those without these features; brighter artworks seem to be worth slightly less. 
