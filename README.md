@@ -103,7 +103,7 @@ Brightness Score actually negatively impacts Hammer Price.
 
 
 ## Preprocessing
-### Remove outliers from features correlated with Hammer Price 
+### Remove outliers from features positively correlated with Hammer Price 
 ```python3
 #Remove outliers from Area which do not follow general trend of data.
 df.drop(df[df['Area (in)'] > 20000].index,axis=0,inplace=True)
