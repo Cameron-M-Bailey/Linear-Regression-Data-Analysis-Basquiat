@@ -213,7 +213,7 @@ plt.ylabel('Predicted Y')
 
 To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
 
-<img width="1005" alt="Screen Shot 2022-08-22 at 5 13 54 PM" src="https://user-images.githubusercontent.com/104586192/186020337-e73359cc-bf23-4c0f-9778-0dbefa709d9a.png">
+<img width="1002" alt="Screen Shot 2022-08-22 at 5 15 45 PM" src="https://user-images.githubusercontent.com/104586192/186020526-a4366169-127b-44b5-8c26-29b857ee66a9.png">
 
 <img width="641" alt="Screen Shot 2022-08-22 at 5 14 08 PM" src="https://user-images.githubusercontent.com/104586192/186020363-a6f978ec-6e6d-40a7-8fde-980b1bc5367e.png">
 
