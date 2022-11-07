@@ -161,7 +161,8 @@ print('Adjusted R-Squared',adjusted_r2_score(train_y, predicted_y_training, line
 
 ```
 
-<img width="448" alt="Screen Shot 2022-11-07 at 12 59 57 PM" src="https://user-images.githubusercontent.com/104586192/200381853-2b4442de-84fa-4229-a6fb-2a6a8f2961df.png">
+<img width="487" alt="Screen Shot 2022-11-07 at 1 06 45 PM" src="https://user-images.githubusercontent.com/104586192/200383037-f9dfc093-3606-4626-a2f4-cea7be082bfe.png">
+
 
 ```python3
 
