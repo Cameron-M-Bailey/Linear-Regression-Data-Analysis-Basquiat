@@ -60,15 +60,6 @@ Excel=
 #Split paintings & drawings into small, medium, and large.
 =IF([area]<=1877,"Small",IF(AND([area]>=1878,[area]<=12312),"Medium",IF([area]>=12313,"Large","Null")))
 ```
-## Baseline Model
-
-A naïve model was built to serve as a benchmark for trained model. 
-
-<img width="425" alt="Screen Shot 2022-08-16 at 1 49 13 PM" src="https://user-images.githubusercontent.com/104586192/184945590-bd114016-7600-44b7-aad8-b51917c535be.png">
-
-<b>Mean Squared Error:</b> 217.589<br>
-<b>Mean Absolute Error:</b> 9.007 <br>
-<b>Root Mean Square Error:</b> 14.751<br>
 
 ## Exploratory Data Analysis
 
