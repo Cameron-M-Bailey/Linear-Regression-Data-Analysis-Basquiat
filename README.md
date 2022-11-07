@@ -1,5 +1,5 @@
 # Regression-Data-Analysis-Basquiat
-### An analysis of Basquiat’s top selling works & a multiple linear regression to predict prices.
+### An analysis of Basquiat’s top selling works & a linear regression and k-NN model to predict prices.
 # Objective 
 This project analyzes Jean Michel Basquait’s top art pieces with the highest hammer prices (sales price in auctions). Aspects such as dimensions (length, width, area), year created, number of unique colors, and others, were explored as features.
 
@@ -179,7 +179,11 @@ predicted_y_training = linear_model.predict(train_X)
 print(regressionSummary(train_y, predicted_y_training))
 print('Adjusted R-Squared',adjusted_r2_score(train_y, predicted_y_training, linear_model))
 
+```
+
 <img width="448" alt="Screen Shot 2022-11-07 at 12 59 57 PM" src="https://user-images.githubusercontent.com/104586192/200381853-2b4442de-84fa-4229-a6fb-2a6a8f2961df.png">
+
+```python3
 
 # test model on test data
 predicted_y_test = linear_model.predict(test_X) 
