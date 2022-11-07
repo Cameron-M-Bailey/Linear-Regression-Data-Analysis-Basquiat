@@ -125,26 +125,6 @@ df.drop(df[(df['Contrast Score']<20) & (df['Hammer Price']>30)].index,axis=0,inp
 
 <img width="404" alt="Screen Shot 2022-08-16 at 2 44 20 PM" src="https://user-images.githubusercontent.com/104586192/184955186-959aa2c1-3d81-4f32-9b1d-54311c8f78f1.png">
 
-### Remedy right-skewed data
-
-```python3
-#View current distrubtion of our y-value (Hammer Price).
-hammer_price = (df['Hammer Price'])
-hammer_price.skew() #2.01
-sns.displot(x=hammer_price,data=df,kde=True)
-```
-<img width="370" alt="Screen Shot 2022-08-16 at 2 52 57 PM" src="https://user-images.githubusercontent.com/104586192/184957621-b63860db-7b35-41e0-be44-ae4145b46b3b.png">
-
-```python3
-#Transform y-value (Hammer Price) into normal distrubtion.
-price_log = np.log(df['Hammer Price'])
-price_log.skew() #-0.32
-
-#Confirm distribution is normally distributed. 
-sns.displot(x=price_log,data=df,kde=True)
-```
-<img width="358" alt="Screen Shot 2022-08-16 at 2 56 36 PM" src="https://user-images.githubusercontent.com/104586192/184959088-1a1a52a0-d227-4fd3-b263-1a17d2443ce8.png">
-
 ### Transforming Categorical Data 
 
 ```python3
