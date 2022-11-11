@@ -62,7 +62,7 @@ Excel=
 ```
 ## Exploratory Data Analysis
 
-Hammer Price is highly correlated with Area and Number of Unique Colors as well as slightly correlated with Contrast Score. 
+Hammer Price is highly correlated with Area and Number of Unique Colors as well as slightly correlated with Contrast Score. We should analyze these relationships further.
 
 <img width="750" alt="Screen Shot 2022-08-16 at 1 56 18 PM" src="https://user-images.githubusercontent.com/104586192/184946886-e69f9ac7-88d6-4344-b29b-4c7ab885bed2.png">
 
