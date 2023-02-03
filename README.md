@@ -222,8 +222,6 @@ To view the interactive dashboard, please visit my Tableau Public profile <a hre
 
 <img width="1002" alt="Screen Shot 2022-08-22 at 5 15 45 PM" src="https://user-images.githubusercontent.com/104586192/186020526-a4366169-127b-44b5-8c26-29b857ee66a9.png">
 
-<img width="641" alt="Screen Shot 2022-08-22 at 5 14 08 PM" src="https://user-images.githubusercontent.com/104586192/186020363-a6f978ec-6e6d-40a7-8fde-980b1bc5367e.png">
-
 <img width="665" alt="Screen Shot 2022-08-17 at 7 19 01 PM" src="https://user-images.githubusercontent.com/104586192/185260117-ddcc4269-a314-4db1-9383-579fc7d04af7.png">
 
              
