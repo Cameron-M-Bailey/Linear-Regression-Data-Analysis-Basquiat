@@ -218,7 +218,7 @@ k-NN model at k=14 performs slightly better and thus should be deployed over the
 - Basquiat's artwork with a variety of unique colors and high contrast (high difference between its lightest and darkest shades) will be worth slightly more than those without these features; brighter artworks seem to be worth slightly less. 
 - Basquiat sales fluctuate every couple of years, but 2021 saw a massive spike in sales due to the height of the #BlackLivesMatter movement and becoming a popular collaborator with large brands.
 
-To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameron6348">here</a>.
+To view the interactive dashboard, please visit my Tableau Public profile <a href="https://public.tableau.com/app/profile/cameronmbailey/viz/BasquiatArtDataAnalysis/Story1">here</a>.
 
 <img width="1002" alt="Screen Shot 2022-08-22 at 5 15 45 PM" src="https://user-images.githubusercontent.com/104586192/186020526-a4366169-127b-44b5-8c26-29b857ee66a9.png">
 
